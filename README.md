@@ -17,6 +17,6 @@ sinon : on affiche le nombre n.
 
 Vous devez actualiser la page pour avoir des nouveaux nombres entiers, compris entre -1000 et 1000 afin d'avoir de nouvelles valeurs. 
 
-## Fait pas KATHY VOISIN
+## Fait par KATHY VOISIN
 
 
