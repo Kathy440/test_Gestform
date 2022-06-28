@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div >
+      <h1 class="d-flex justify-content-center">Test technique</h1>
+      <div class="card w-50 mx-auto">
+        <div class="card-body">
+          <p class="card-text">
+            <i
+              >Soit une liste aléatoire de nombres entiers, compris entre -1000
+              et 1000. Pour chaque nombre n de liste, on veut effectuer les
+              opérations suivantes:
+              <ul>
+                <li>si le nombre est divisible par 3 : on affiche Geste</li>
+                <li>si le nombre est divisible par 5 : on affiche Forme</li>
+                <li>
+                  si le nombre est divisible par 3 et par 5 : on affiche
+                  Gestform (d’où le nom du test)
+                </li>
+                <li>sinon : on affiche le nombre n</li>
+              </ul>
+            </i>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-responsive mt-4 w-75 mx-auto">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Nom</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of list">
+              <td>{{ data.number }}</td>
+              <td
+                [ngClass]="{
+                  class1: data.name == 'GestForm',
+                  class2: data.name == 'Forme',
+                  class3: data.name == 'Geste'
+                }"
+              >
+                {{ data.name }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
